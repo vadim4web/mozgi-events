@@ -1,0 +1,1 @@
+import{_ as a,c as s,a as t,t as c,o as n}from"./index-CoFJmen8.js";const o={},r={class:"main"};function _(e,i){return n(),s("main",r,[t("h2",null,c(e.$t("where"))+" ?",1)])}const f=a(o,[["render",_]]);export{f as default};

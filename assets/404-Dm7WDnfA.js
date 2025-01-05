@@ -1,1 +1,0 @@
-import{_ as s,c as n,a as o,o as t}from"./index-BYwElijL.js";const a={},c={class:"main"};function r(_,e){return t(),n("main",c,e[0]||(e[0]=[o("h2",null,"404",-1)]))}const f=s(a,[["render",r]]);export{f as default};
