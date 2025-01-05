@@ -37,38 +37,41 @@ mozgi-events/
 ├── dist/ # Compiled production files (auto-generated after build)
 ├── node_modules/ # Installed dependencies (auto-generated after npm install)
 ├── public/ # Public assets (images, fonts, icons, etc.)
-│     ├── 404.html # GitHub Pages redirect file
-│     └── mozgi.svg # Favicon
+│   ├── 404.html # GitHub Pages redirect file
+│   └── mozgi.svg # Favicon
 ├── src/ # Source code for the project
-│ ├── assets/ # Images, fonts, and other assets used in components
-│ │     ├── lingo.png # Example image used in your project
-│ │     └── show.png # Example image used in the background or elsewhere
-│ ├── components/ # Vue components
-│ │     ├── Head1.vue # Header component
-│ │     ├── Logo.vue # Logo component
-│ │     ├── Links.vue # Links or menu component
-│ │     ├── Lingo.vue # Lingo related component
-│ │     ├── Play.vue # Play or media component
-│ │     ├── Show.vue # Show or media display component
-│ │     └── Spot.vue # Specific display or spot component
-│ ├── i18n.js # Internationalization setup (Vue-i18n)
-│ ├── router.js # Vue Router for page navigation
-│ ├── store.js # Vuex or global state management (if needed)
-│ ├── style.css # Global styles (including animations, transitions, etc.)
-│ ├── views/ # Vue views for different routes/pages
-│ │     ├── 404.vue # 404 page view
-│ │     ├── Home.vue # Home page view
-│ │     ├── What.vue # 'What' page view
-│ │     ├── Where.vue # 'Where' page view
-│ │     └── Who.vue # 'Who' page view
-│ ├── App.vue # Main Vue component that serves as the entry point
-│ └── main.js # Main entry JavaScript file for the Vue app
+│   ├── assets/ # Images, fonts, and other assets used in components
+│   │   ├── lingo.png # PNG image used in `Lingo` component
+│   │   ├── routes.css # Styles used in Vue-Router Transition
+│   │   ├── show.mp4 # MOZGI Event Agency's cover Video
+│   │   ├── show.png # PNG showreel wheel-shaped span used in `Show.vue`
+│   │   └── vars.css # CSS variables for different devices
+│   ├── components/ # Vue components
+│   │   ├── Head1.vue # Header component
+│   │   ├── Logo.vue # Logo component
+│   │   ├── Links.vue # Links menu component
+│   │   ├── Lingo.vue # Language switching component
+│   │   ├── Play.vue # Player component
+│   │   ├── Show.vue # Player show/Hide component
+│   │   └── Spot.vue # Spot like the Sun behind component
+│   ├── i18n.js # Internationalization setup (Vue-i18n)
+│   ├── router.js # Vue Router for page navigation
+│   ├── store.js # Reactive global state management
+│   ├── style.css # Global styles (including animations, transitions, etc.)
+│   ├── views/ # Vue views for different routes/pages
+│   │   ├── 404.vue # 404 page view
+│   │   ├── Home.vue # Home page view
+│   │   ├── What.vue # 'What' page view
+│   │   ├── Where.vue # 'Where' page view
+│   │   └── Who.vue # 'Who' page view
+│   ├── App.vue # Main Vue component that serves as the entry point
+│   └── main.js # Main entry JavaScript file for the Vue app
 ├── .gitignore # Git ignore file for version control
 ├── index.html # Main HTML file (entry point for Vue app)
 ├── package.json # Project metadata and dependencies
 ├── package-lock.json # Lock file for consistent dependency installs
 ├── README.md # Project documentation
-└──  vite.config.js # Vite configuration file
+└── vite.config.js # Vite configuration file
 ```
 
 ## Animations
