@@ -35,8 +35,6 @@ The page is designed to be:
 
 ```arduino
 mozgi-events/
-├── dist/ # Compiled production files (auto-generated after build)
-├── node_modules/ # Installed dependencies (auto-generated after npm install)
 ├── public/ # Public assets (images, fonts, icons, etc.)
 │   ├── 404.html # GitHub Pages redirect file
 │   └── mozgi.svg # Favicon
@@ -67,10 +65,8 @@ mozgi-events/
 │   │   └── Who.vue # 'Who' page view
 │   ├── App.vue # Main Vue component that serves as the entry point
 │   └── main.js # Main entry JavaScript file for the Vue app
-├── .gitignore # Git ignore file for version control
 ├── index.html # Main HTML file (entry point for Vue app)
 ├── package.json # Project metadata and dependencies
-├── package-lock.json # Lock file for consistent dependency installs
 ├── README.md # Project documentation
 └── vite.config.js # Vite configuration file
 ```
