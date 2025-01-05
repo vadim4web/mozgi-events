@@ -26,6 +26,7 @@ The page is designed to be:
 - **Vue.js**: The core JavaScript framework for building the application.
 - **Vite**: A fast and modern build tool.
 - **Vue Router**: For navigation and routing between pages.
+- **Vue Use**: Vue utility library for handling mouse move listening etc.
 - **Vue I18n**: For internationalization, supporting EN, UA, and RU languages.
 - **CSS & SVG**: For styling and animations, leveraging Vue transitions and native CSS animations.
 - **Video**: Used for media elements in the Show section.
