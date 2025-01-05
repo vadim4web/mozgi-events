@@ -50,12 +50,11 @@ const videoSrc = videoFile
 .close {
   position: absolute;
   right: 1rem;
-  top: 1rem;
-  padding: 0.5rem 1rem;
+  top: 0.5rem;
+  padding: 1rem;
   font-size: 1rem;
   font-weight: bold;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 5px;
   cursor: pointer;
