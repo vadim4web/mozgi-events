@@ -1,21 +1,3 @@
-<script setup>
-import Logo from '@/components/Logo.vue'
-import Lingo from '@/components/Lingo.vue'
-import Links from '@/components/Links.vue'
-</script>
-
-<template>
-  <lingo />
-  <logo />
-  <links />
-  <router-view v-slot="{ Component, route }">
-    <transition :name="route.meta.transition || 'fade'">
-      <component :is="Component" />
-    </transition>
-  </router-view>
-</template>
-
-<style>
 .slide-right-enter-from{
   transform: translateX(100%);
 }
@@ -62,4 +44,3 @@ import Links from '@/components/Links.vue'
 .slide-down-leave-to{
   transform: translateY(-100%);
 }
-</style>

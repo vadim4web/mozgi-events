@@ -14,17 +14,7 @@ const routes = [
         ua: 'MOZGI * Агенція подій повного циклу',
         ru: 'MOZGI * Агентство мероприятий полного цикла',
       },
-    },
-  },
-  {
-    path: '/who',
-    component: () => import('@/views/Who.vue'),
-    meta: {
-      titles: {
-        en: 'Who * MOZGI',
-        ua: 'Хто * MOZGI',
-        ru: 'Кто * MOZGI',
-      },
+      transition: 'slide-up'
     },
   },
   {
@@ -36,6 +26,19 @@ const routes = [
         ua: 'Де * MOZGI',
         ru: 'Где * MOZGI',
       },
+      transition: 'slide-left'
+    },
+  },
+  {
+    path: '/who',
+    component: () => import('@/views/Who.vue'),
+    meta: {
+      titles: {
+        en: 'Who * MOZGI',
+        ua: 'Хто * MOZGI',
+        ru: 'Кто * MOZGI',
+      },
+      transition: 'slide-down'
     },
   },
   {
@@ -47,6 +50,7 @@ const routes = [
         ua: 'Що * MOZGI',
         ru: 'Что * MOZGI',
       },
+      transition: 'slide-right'
     },
   },
   {
@@ -59,6 +63,7 @@ const routes = [
         ua: 'MOZGI * 404',
         ru: 'MOZGI * 404',
       },
+      transition: 'fade'
     },
   },
 ]
