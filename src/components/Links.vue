@@ -116,13 +116,9 @@ const closeMenu = () => (menuOpen.value = false)
   }
 
   &.mobile {
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-
     &.closed {
       width: 0;
       height: 0;
-      overflow: hidden;
 
       .link {
         display: none;
@@ -146,11 +142,12 @@ const closeMenu = () => (menuOpen.value = false)
       .line {
         position: absolute;
         left: 0;
+        top: 13px;
         width: 22px;
         height: 1.5px;
         background: var(--black);
-        transition: transform 0.3s ease, top 0.3s ease;
-        -webkit-transition: transform 0.3s ease, top 0.3s ease;
+        -webkit-transform: rotate 0.5s, scaleX 0.5s, top 0.5s;
+        transform: rotate 0.5s, scaleX 0.5s, top 0.5s;
 
         &.line1 {
           top: 13px;
@@ -163,37 +160,39 @@ const closeMenu = () => (menuOpen.value = false)
 
       &.open {
         .line {
+          -webkit-transform-origin: 0;
+          transform-origin: 0;
           height: 1px;
         }
 
         .line1 {
-          transform: rotate(45deg);
-          -webkit-transform: rotate(45deg);
-          top: 18px;
+          -webkit-transform: rotate(45deg) scaleX(1.4);
+          transform: rotate(45deg) scaleX(1.4);
+          top: 6px;
         }
         .line2 {
-          transform: rotate(-45deg);
-          -webkit-transform: rotate(-45deg);
-          top: 18px;
+          -webkit-transform: rotate(-45deg) scaleX(1.4);
+          transform: rotate(-45deg) scaleX(1.4);
+          top: 28px;
         }
       }
     }
 
     .link {
       left: 50%;
-      transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
     }
 
     .link.home {
       width: 5rem;
 
       @media (orientation: portrait) {
-        top: 30vh;
+        top: 33.3vh;
       }
 
       @media (orientation: landscape) {
-        top: 25vh;
+        top: 28vh;
       }
 
       &:hover svg {
@@ -203,7 +202,6 @@ const closeMenu = () => (menuOpen.value = false)
         animation: fillOut 0.5s linear forwards;
       }
     }
-
     .link.where {
       top: 45vh;
     }
@@ -216,31 +214,38 @@ const closeMenu = () => (menuOpen.value = false)
   }
 
   &.notMobile {
+    width: 0;
+    height: 0;
+
     .link {
       right: 0;
     }
 
-    .link.home {
+    .home {
       display: none;
     }
 
+    .link.home {
+      top: 30vh;
+    }
     .link.where {
       top: 50vh;
       right: calc(100vw - 64px - var(--links-offset));
-      transform: rotate(-90deg);
       -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
     }
     .link.who {
       top: calc(100vh - 16px - var(--links-offset) * 2);
+      -webkit-transform: rotate(180deg) translateX(-50%);
+      transform: rotate(180deg) translateX(-50%);
       right: 50vw;
-      transform: rotate(180deg);
-      -webkit-transform: rotate(180deg);
     }
+
     .link.what {
-      top: 50vh;
       right: calc(var(--links-offset) * 2 - 32px);
-      transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+      top: 50vh;
     }
   }
 }

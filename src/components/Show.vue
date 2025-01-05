@@ -1,7 +1,7 @@
 <template>
   <button
     class="show"
-    @click="clickHandler"
+    @click="toggleShowreel"
     @mouseenter="enter"
     @mouseleave="leave"
     :style="{ transform: `translate(-50%,-50%) rotate(${rotation}deg)` }"
@@ -29,7 +29,7 @@ const leave = () => {
   clearInterval(interval)
 }
 
-const clickHandler = () => state.setShowPlayer(true)
+const toggleShowreel = () => state.setShowPlayer(!state.showPlayer)
 </script>
 
 <style lang="scss">

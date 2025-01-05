@@ -21,7 +21,7 @@ const videoSrc = videoFile
 <style lang="scss" scoped>
 .video-container {
   position: absolute;
-  z-index: 10;
+  z-index: 5;
   width: 100%;
   max-width: 640px;
   margin: 0 auto;
@@ -31,7 +31,7 @@ const videoSrc = videoFile
   justify-content: center;
 
   @media (orientation: portrait) {
-    top: 12vmin;
+    top: 4rem;
   }
 
   @media (orientation: landscape) {
@@ -52,7 +52,7 @@ const videoSrc = videoFile
   right: 1rem;
   top: 1rem;
   padding: 0.5rem 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
