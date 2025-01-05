@@ -1,12 +1,12 @@
 <template>
-  <button 
+  <button
     class="show"
     @click="clickHandler"
     @mouseenter="enter"
     @mouseleave="leave"
-    :style="{ transform: `translate(-50%,-50%) rotate(${rotation}deg)`}"
+    :style="{ transform: `translate(-50%,-50%) rotate(${rotation}deg)` }"
   >
-    <img :src="show" alt="showreel" class="show-image">
+    <img :src="show" alt="showreel" class="show-image" />
   </button>
 </template>
 
@@ -21,7 +21,7 @@ let interval = null
 const enter = () => {
   clearInterval(interval)
   rotation.value -= 5
-  interval = setInterval(() => rotation.value -= 20, 100)
+  interval = setInterval(() => (rotation.value -= 20), 100)
 }
 
 const leave = () => {
@@ -33,10 +33,16 @@ const clickHandler = () => state.setShowPlayer(true)
 </script>
 
 <style lang="scss">
-@keyframes rotation {
+/* @keyframes rotation {
   from { transform: translate(-50%, -50%) rotate(0); }
   to { transform: translate(-50%, -50%) rotate(-360deg); }
 }
+
+@-webkit-keyframes rotation {
+  from { transform: translate(-50%, -50%) rotate(0); }
+  to { transform: translate(-50%, -50%) rotate(-360deg); }
+} */
+
 .show {
   cursor: pointer;
   width: var(--show-size);
@@ -51,6 +57,9 @@ const clickHandler = () => state.setShowPlayer(true)
   /* transform: translate(-50%, -50%); */
 
   /* &:hover {
+    -webkit-animation: rotation 3s infinite;
+    -moz-animation: rotation 3s infinite;
+    -o-animation: rotation 3s infinite;
     animation: rotation 3s infinite;
   } */
 

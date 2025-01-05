@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <h1 style="display: none;">MOZGI * Full-Cycle Event Agency</h1>
+    <h1 style="display: none">MOZGI * Full-Cycle Event Agency</h1>
     <head1 />
     <loop />
     <spot />

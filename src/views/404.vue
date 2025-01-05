@@ -1,13 +1,5 @@
 <template>
-  <div>
+  <main class="main">
     <h2>404</h2>
-  </div>
+  </main>
 </template>
-
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>

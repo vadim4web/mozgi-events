@@ -33,9 +33,9 @@ onUnmounted(() => window.removeEventListener('resize', updateDiagonal))
   position: absolute;
   min-width: calc(hypot(100vw, 100vh));
   min-height: 1px;
-  position: absolute;
   top: 50%;
   left: 0;
+  -webkit-transform: translateY(50%);
   transform: translateY(50%);
 }
 
@@ -43,7 +43,7 @@ onUnmounted(() => window.removeEventListener('resize', updateDiagonal))
   opacity: 0.1;
   color: transparent;
   text-shadow: none;
-  -webkit-text-stroke: 2px var(--black);
+  -webkit-text-stroke: 2px var(--black); // Safari compatibility
   text-align: center;
   text-transform: uppercase;
   border: 1px solid var(--gray);
@@ -55,20 +55,42 @@ onUnmounted(() => window.removeEventListener('resize', updateDiagonal))
 }
 
 @keyframes loop1 {
-  from { transform: translateX(-75%) translateY(8px) rotate(180deg); }
-  to { transform: translateX(0) translateY(8px) rotate(180deg); }
+  from { -webkit-transform: translateX(-75%) translateY(8px) rotate(180deg);
+    transform: translateX(-75%) translateY(8px) rotate(180deg); }
+  to { -webkit-transform: translateX(0) translateY(8px) rotate(180deg);
+    transform: translateX(0) translateY(8px) rotate(180deg); }
+}
+
+@-webkit-keyframes loop1 {
+  from { -webkit-transform: translateX(-75%) translateY(8px) rotate(180deg);
+    transform: translateX(-75%) translateY(8px) rotate(180deg); }
+  to { -webkit-transform: translateX(0) translateY(8px) rotate(180deg);
+    transform: translateX(0) translateY(8px) rotate(180deg); }
 }
 
 @keyframes loop2 {
-  from { transform: translateX(75%) translateY(-8px) rotate(0); }
-  to { transform: translateX(0) translateY(-8px) rotate(0); }
+  from { -webkit-transform: translateX(75%) translateY(-8px) rotate(0);
+    transform: translateX(75%) translateY(-8px) rotate(0); }
+  to { -webkit-transform: translateX(0) translateY(-8px) rotate(0);
+    transform: translateX(0) translateY(-8px) rotate(0); }
+}
+
+@-webkit-keyframes loop2 {
+  from { -webkit-transform: translateX(75%) translateY(-8px) rotate(0);
+    transform: translateX(75%) translateY(-8px) rotate(0); }
+  to { -webkit-transform: translateX(0) translateY(-8px) rotate(0);
+    transform: translateX(0) translateY(-8px) rotate(0); }
 }
 
 .loop1 {
   position: absolute;
   left: 0;
   top: 0;
+  -webkit-transform: rotate(180deg) translateY(8px);
   transform: rotate(180deg) translateY(8px);
+  -webkit-animation: loop1 13s -2s linear infinite;
+  -moz-animation: loop1 13s -2s linear infinite;
+  -o-animation: loop1 13s -2s linear infinite;
   animation: loop1 13s -2s linear infinite;
 }
 
@@ -76,7 +98,11 @@ onUnmounted(() => window.removeEventListener('resize', updateDiagonal))
   position: absolute;
   right: 0;
   bottom: 0;
+  -webkit-transform: translate(-0%, -8px) rotate(0);
   transform: translate(-0%, -8px) rotate(0);
+  -webkit-animation: loop2 15s -2s linear infinite;
+  -moz-animation: loop2 15s -2s linear infinite;
+  -o-animation: loop2 15s -2s linear infinite;
   animation: loop2 15s -2s linear infinite;
 }
 </style>

@@ -20,9 +20,21 @@
     </button>
     <li>
       <router-link @click="closeMenu" class="link home logo" to="/">
-        <svg width="85" height="46" viewBox="0 0 85 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="85"
+          height="46"
+          viewBox="0 0 85 46"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <defs>
-            <filter id="shadowShape" x="-50%" y="-50%" width="200%" height="200%">
+            <filter
+              id="shadowShape"
+              x="-50%"
+              y="-50%"
+              width="200%"
+              height="200%"
+            >
               <feDropShadow
                 dx="0"
                 dy="0"
@@ -32,7 +44,15 @@
               />
             </filter>
           </defs>
-          <path id="logoPath" filter="url(#shadowShape)" fill-rule="evenodd" clip-rule="evenodd" d="M29.1881 6.12368L37.1967 4.76944V32.3073L29.1881 30.9529V6.12368ZM25.7709 2.70864V34.3682L40.6138 37.0767V0L25.7709 2.70864ZM69.2349 18.1975V21.6108H73.8769V30.9366H65.4666V6.12038H72.6661V11.1968H76.0816V2.7072H62.0511V34.3498H77.2924V18.1975H69.2349ZM11.6071 28.088L11.6259 28.1724C13.5022 19.6456 15.3722 11.1529 17.2328 2.70721H22.3529V34.3496H18.9376V9.63353C18.8876 9.63353 13.2524 34.3656 13.2524 34.3656H9.96191C9.96191 34.3656 4.3267 9.63353 4.27684 9.63353V34.3496H0.861328V2.70721H5.98131C7.8421 11.1529 9.71227 19.6456 11.5885 28.1724C11.5948 28.1442 11.6007 28.1161 11.6071 28.088ZM54.9259 6.12045H44.4379V2.70727H58.6289V6.12045L48.1405 30.9365H58.6289V34.3498H44.4379V30.9365L54.9259 6.12045ZM84.1299 34.35H80.7142V2.7074H84.1299V34.35ZM30.9617 45.9999V45.4751H28.2521V43.8936H30.353V43.3689H28.2521V41.9542H30.8591V41.4293H27.6754V45.9999H30.9617ZM33.6423 41.4292H34.251L35.4999 45.4108H35.8204L37.0694 41.4292H37.6652L36.2045 45.9999H35.1027L33.6423 41.4292ZM43.9078 45.9999V45.4751H41.1982V43.8936H43.2995V43.3689H41.1982V41.9542H43.8055V41.4293H40.6218V45.9999H43.9078ZM50.7845 41.4292V45.9999H49.8749L47.7484 42.1782H47.6071V45.9999H47.0437V41.4292H47.9533L50.0798 45.251H50.2207V41.4292H50.7845ZM55.8168 41.9416H57.3159V41.4292H53.7286V41.9416H55.24V46H55.8168V41.9416Z" stroke="var(--black)" stroke-width="0.25" />
+          <path
+            id="logoPath"
+            filter="url(#shadowShape)"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M29.1881 6.12368L37.1967 4.76944V32.3073L29.1881 30.9529V6.12368ZM25.7709 2.70864V34.3682L40.6138 37.0767V0L25.7709 2.70864ZM69.2349 18.1975V21.6108H73.8769V30.9366H65.4666V6.12038H72.6661V11.1968H76.0816V2.7072H62.0511V34.3498H77.2924V18.1975H69.2349ZM11.6071 28.088L11.6259 28.1724C13.5022 19.6456 15.3722 11.1529 17.2328 2.70721H22.3529V34.3496H18.9376V9.63353C18.8876 9.63353 13.2524 34.3656 13.2524 34.3656H9.96191C9.96191 34.3656 4.3267 9.63353 4.27684 9.63353V34.3496H0.861328V2.70721H5.98131C7.8421 11.1529 9.71227 19.6456 11.5885 28.1724C11.5948 28.1442 11.6007 28.1161 11.6071 28.088ZM54.9259 6.12045H44.4379V2.70727H58.6289V6.12045L48.1405 30.9365H58.6289V34.3498H44.4379V30.9365L54.9259 6.12045ZM84.1299 34.35H80.7142V2.7074H84.1299V34.35ZM30.9617 45.9999V45.4751H28.2521V43.8936H30.353V43.3689H28.2521V41.9542H30.8591V41.4293H27.6754V45.9999H30.9617ZM33.6423 41.4292H34.251L35.4999 45.4108H35.8204L37.0694 41.4292H37.6652L36.2045 45.9999H35.1027L33.6423 41.4292ZM43.9078 45.9999V45.4751H41.1982V43.8936H43.2995V43.3689H41.1982V41.9542H43.8055V41.4293H40.6218V45.9999H43.9078ZM50.7845 41.4292V45.9999H49.8749L47.7484 42.1782H47.6071V45.9999H47.0437V41.4292H47.9533L50.0798 45.251H50.2207V41.4292H50.7845ZM55.8168 41.9416H57.3159V41.4292H53.7286V41.9416H55.24V46H55.8168V41.9416Z"
+            stroke="var(--black)"
+            stroke-width="0.25"
+          />
         </svg>
       </router-link>
     </li>
@@ -66,8 +86,21 @@ const closeMenu = () => (menuOpen.value = false)
 
 <style lang="scss" scoped>
 @keyframes fillOut {
-  from { fill: transparent; }
-  to { fill: var(--black); }
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: var(--black);
+  }
+}
+
+@-webkit-keyframes fillOut {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: var(--black);
+  }
 }
 
 .links {
@@ -83,9 +116,13 @@ const closeMenu = () => (menuOpen.value = false)
   }
 
   &.mobile {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+
     &.closed {
       width: 0;
       height: 0;
+      overflow: hidden;
 
       .link {
         display: none;
@@ -109,11 +146,11 @@ const closeMenu = () => (menuOpen.value = false)
       .line {
         position: absolute;
         left: 0;
-        top: 13px;
         width: 22px;
         height: 1.5px;
         background: var(--black);
-        transform: rotate 0.5s, scaleX 0.5s, top 0.5s;
+        transition: transform 0.3s ease, top 0.3s ease;
+        -webkit-transition: transform 0.3s ease, top 0.3s ease;
 
         &.line1 {
           top: 13px;
@@ -126,17 +163,18 @@ const closeMenu = () => (menuOpen.value = false)
 
       &.open {
         .line {
-          transform-origin: 0;
           height: 1px;
         }
 
         .line1 {
-          transform: rotate(45deg) scaleX(1.4);
-          top: 6px;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          top: 18px;
         }
         .line2 {
-          transform: rotate(-45deg) scaleX(1.4);
-          top: 28px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          top: 18px;
         }
       }
     }
@@ -144,23 +182,28 @@ const closeMenu = () => (menuOpen.value = false)
     .link {
       left: 50%;
       transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
     }
 
     .link.home {
       width: 5rem;
 
       @media (orientation: portrait) {
-        top: 33.3vh;
+        top: 30vh;
       }
 
       @media (orientation: landscape) {
-        top: 28vh;
+        top: 25vh;
       }
 
       &:hover svg {
+        -webkit-animation: fillOut 0.5s linear forwards;
+        -moz-animation: fillOut 0.5s linear forwards;
+        -o-animation: fillOut 0.5s linear forwards;
         animation: fillOut 0.5s linear forwards;
       }
     }
+
     .link.where {
       top: 45vh;
     }
@@ -173,35 +216,31 @@ const closeMenu = () => (menuOpen.value = false)
   }
 
   &.notMobile {
-    width: 0;
-    height: 0;
-
     .link {
       right: 0;
     }
 
-    .home {
+    .link.home {
       display: none;
     }
 
-    .link.home {
-      top: 30vh;
-    }
     .link.where {
       top: 50vh;
       right: calc(100vw - 64px - var(--links-offset));
       transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
     }
     .link.who {
       top: calc(100vh - 16px - var(--links-offset) * 2);
-      transform: rotate(180deg) translateX(-50%);
       right: 50vw;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
     }
-
     .link.what {
+      top: 50vh;
       right: calc(var(--links-offset) * 2 - 32px);
       transform: rotate(90deg);
-      top: 50vh;
+      -webkit-transform: rotate(90deg);
     }
   }
 }

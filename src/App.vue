@@ -1,13 +1,5 @@
-<script setup>
-import Logo from '@/components/Logo.vue'
-import Lingo from '@/components/Lingo.vue'
-import Links from '@/components/Links.vue'
-</script>
-
 <template>
-  <lingo />
-  <logo />
-  <links />
+  <lingo /> <logo />  <links />
   <router-view v-slot="{ Component, route }">
     <transition :name="route.meta.transition || 'fade'">
       <component :is="Component" />
@@ -15,51 +7,8 @@ import Links from '@/components/Links.vue'
   </router-view>
 </template>
 
-<style>
-.slide-right-enter-from{
-  transform: translateX(100%);
-}
-.slide-right-enter-to,
-.slide-right-leave-from{
-  transform: translateX(0);
-}
-.slide-right-leave-to{
-  transform: translateX(-100%);
-}
-
-
-.slide-left-enter-from{
-  transform: translateX(-100%);
-}
-.slide-left-enter-to,
-.slide-left-leave-from{
-  transform: translateX(0);
-}
-.slide-left-leave-to{
-  transform: translateX(100%);
-}
-
-
-.slide-up-enter-from{
-  transform: translateY(-100%);
-}
-.slide-up-enter-to,
-.slide-up-leave-from{
-  transform: translateY(0);
-}
-.slide-up-leave-to{
-  transform: translateY(100%);
-}
-
-
-.slide-down-enter-from{
-  transform: translateY(100%);
-}
-.slide-down-enter-to,
-.slide-down-leave-from{
-  transform: translateY(0);
-}
-.slide-down-leave-to{
-  transform: translateY(-100%);
-}
-</style>
+<script setup>
+import Logo from '@/components/Logo.vue'
+import Lingo from '@/components/Lingo.vue'
+import Links from '@/components/Links.vue'
+</script>

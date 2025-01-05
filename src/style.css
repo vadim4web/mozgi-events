@@ -1,38 +1,46 @@
 @import '@/assets/routes.css';
 @import '@/assets/vars.css';
 
+/* Root variables */
 :root {
   --black: #000000;
   --gray: #373737;
-  --grey: #BEBEBE;
-  --white: #FFFFFF;
-  --yellow: #FFCB46;
+  --grey: #bebebe;
+  --white: #ffffff;
+  --yellow: #ffcb46;
   line-height: 1.5;
   font-style: normal;
   text-align: center;
   background: var(--grey);
 }
 
-* * {
+/* Box-sizing and transitions */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   color: var(--gray);
-  font-family: "TRY Grtsk SemiBold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
+  font-family: 'TRY Grtsk SemiBold', system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 
+/* Body and main layout */
 body,
 #app,
 .main {
   width: 100%;
-  height: 100dvh;
+  height: 100vh; /* Replaced 100dvh for compatibility */
   position: relative;
   overflow: hidden;
 }
 
+/* Reset margins and paddings */
 h1,
 h2,
 h3,
@@ -45,6 +53,7 @@ menu {
   list-style: none;
 }
 
+/* Specific element styles */
 h1,
 h2,
 h3,
@@ -53,12 +62,13 @@ ul {
 }
 
 h2 {
-  font-family: "TRY Grtsk Giga";
+  font-family: 'TRY Grtsk Giga';
 }
 
 h3 {
-  font-family: "TRY Grtsk SemiBold Slant";
+  font-family: 'TRY Grtsk SemiBold Slant';
 }
+
 button {
   border: none;
   background: transparent;
@@ -66,7 +76,7 @@ button {
 }
 
 a {
-  font-family: "TRY Grtsk SemiBold Giga";
+  font-family: 'TRY Grtsk SemiBold Giga';
   color: var(--gray);
   position: relative;
   text-decoration: none;
@@ -80,22 +90,24 @@ a:not(.logo)::before {
   height: 2px;
   background: var(--gray);
   left: 0;
-  transition: width 1s;
-  -webkit-transition: width 1s;
-  -moz-transition: width 1s;
-  -ms-transition: width 1s;
-  -o-transition: width 1s;
-  font-size: var(--link-f);
+  transition: width 1s ease;
+  -webkit-transition: width 1s ease;
+  -moz-transition: width 1s ease;
+  -ms-transition: width 1s ease;
+  -o-transition: width 1s ease;
 }
 
 a:hover::before {
   width: 100%;
 }
 
+/* Main container styling */
 .main {
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--grey);
   box-shadow: 0 0 1rem var(--black);
+  -webkit-box-shadow: 0 0 1rem var(--black);
+  -moz-box-shadow: 0 0 1rem var(--black);
 }

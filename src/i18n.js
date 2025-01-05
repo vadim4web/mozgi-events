@@ -28,14 +28,14 @@ const messages = {
 }
 
 const i18n = createI18n({
-  locale: localStorage.getItem('locale') || 'en', // Set locale from localStorage
+  locale: localStorage.getItem('locale') || 'en',
   fallbackLocale: 'en',
   messages,
 })
 
 export function setLocale(locale) {
   localStorage.setItem('locale', locale)
-  i18n.global.locale = locale // Change locale in i18n instance
+  i18n.global.locale = locale
 }
 
 export default i18n

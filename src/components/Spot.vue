@@ -25,10 +25,12 @@ import Show from '@/components/Show.vue'
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: var(--spot-size);
   height: var(--spot-size);
   border-radius: calc(var(--spot-size) / 2);
+  -webkit-filter: blur(4vmax);
   filter: blur(4vmax);
   background: radial-gradient(var(--yellow) 95%, transparent);
   z-index: 0;
@@ -40,7 +42,14 @@ import Show from '@/components/Show.vue'
   height: 0;
   top: 0;
   left: 0;
-  transform: translate(calc(var(--spot-size) * 0.36), calc(var(--spot-size) * 0.36));
+  -webkit-transform: translate(
+    calc(var(--spot-size) * 0.36),
+    calc(var(--spot-size) * 0.36)
+  );
+  transform: translate(
+    calc(var(--spot-size) * 0.36),
+    calc(var(--spot-size) * 0.36)
+  );
   z-index: 1;
 }
 </style>

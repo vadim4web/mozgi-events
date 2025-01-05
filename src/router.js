@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
-import { useI18n } from 'vue-i18n'
 import i18n from '@/i18n'
 
 const routes = [
@@ -75,10 +74,10 @@ const router = createRouter({
 
 // Update page title after each route change
 router.afterEach(to => {
-  const locale = i18n.global.locale // Access current locale from i18n instance
+  const locale = i18n.global.locale
   const routeMeta = to.meta || {}
   const titles = routeMeta.titles || {}
-  document.title = titles[locale] || titles.en // Set title based on current locale
+  document.title = titles[locale] || titles.en
 })
 
 export default router
