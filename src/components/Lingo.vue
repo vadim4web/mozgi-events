@@ -57,6 +57,7 @@ import lingo from '@/assets/lingo.png'
       cursor: pointer;
       color: var(--gray);
       font-weight: bold;
+      padding: 0.25rem 0.5rem;
 
       &:hover {
         color: var(--yellow);
