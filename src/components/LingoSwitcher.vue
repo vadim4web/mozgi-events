@@ -1,5 +1,5 @@
 <template>
-  <div class="lingo">
+  <div class="lingo-switcher">
     <img :src="lingo" class="lingo-img" alt="lingo-img" />
 
     <ul class="lingo-list">
@@ -16,7 +16,7 @@ import lingo from '@/assets/lingo.png'
 </script>
 
 <style lang="scss" scoped>
-.lingo {
+.lingo-switcher {
   width: var(--lingo-size);
   position: absolute;
   top: var(--lingo-top);

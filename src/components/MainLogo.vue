@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/" class="logo link">
+  <router-link to="/" class="main-logo link">
     <svg
       id="logoShape"
       width="85"
@@ -64,7 +64,7 @@
   }
 }
 
-.logo {
+.main-logo {
   position: absolute;
   top: var(--mozgi-top);
   width: var(--mozgi-w);

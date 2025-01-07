@@ -1,5 +1,8 @@
 <template>
-  <h2 :style="{ transform: `translate(${dX}% , ${dY}%)` }">
+  <h2
+    style="position: relative; font-size: var(--head1); max-width: var(--head1-w);"
+    :style="{ transform: `translate(${dX}% , ${dY}%)` }"
+  >
     {{ $t('header') }}
   </h2>
 </template>
@@ -19,10 +22,3 @@ const dY = computed(() =>
 )
 </script>
 
-<style lang="scss">
-h2 {
-  position: relative;
-  font-size: var(--head1);
-  max-width: var(--head1-w);
-}
-</style>

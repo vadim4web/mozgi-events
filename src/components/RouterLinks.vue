@@ -1,6 +1,6 @@
 <template>
   <menu
-    class="links"
+    class="router-links"
     :class="{
       open: menuOpen,
       closed: !menuOpen,
@@ -103,7 +103,7 @@ const closeMenu = () => (menuOpen.value = false)
   }
 }
 
-.links {
+.router-links {
   position: absolute;
   z-index: 10;
   top: 0;
@@ -230,19 +230,19 @@ const closeMenu = () => (menuOpen.value = false)
     }
     .link.where {
       top: 50vh;
-      right: calc(100vw - 64px - var(--links-offset));
+      right: calc(100vw - 64px - var(--router-links-offset));
       -webkit-transform: rotate(-90deg);
       transform: rotate(-90deg);
     }
     .link.who {
-      top: calc(100vh - 16px - var(--links-offset) * 2);
+      top: calc(100vh - 16px - var(--router-links-offset) * 2);
       -webkit-transform: rotate(180deg) translateX(-50%);
       transform: rotate(180deg) translateX(-50%);
       right: 50vw;
     }
 
     .link.what {
-      right: calc(var(--links-offset) * 2 - 32px);
+      right: calc(var(--router-links-offset) * 2 - 32px);
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
       top: 50vh;

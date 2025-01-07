@@ -1,18 +1,22 @@
 <template>
   <button
-    class="show"
+    class="showreel-button"
     @click="toggleShowreel"
     @mouseenter="enter"
     @mouseleave="leave"
     :style="{ transform: `translate(-50%,-50%) rotate(${rotation}deg)` }"
   >
-    <img :src="show" alt="showreel" class="show-image" />
+    <img
+      :src="showreel"
+      alt="showreel-buttonreel"
+      class="showreel-button-image"
+    />
   </button>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import show from '@/assets/show.png'
+import showreel from '@/assets/showreel.png'
 import { state } from '@/store'
 
 const rotation = ref(0)
@@ -45,8 +49,8 @@ const toggleShowreel = () => state.setShowPlayer(!state.showPlayer)
 
 .show {
   cursor: pointer;
-  width: var(--show-size);
-  height: var(--show-size);
+  width: var(--showreel-button-size);
+  height: var(--showreel-button-size);
   position: absolute;
   z-index: 15;
   border: none;
@@ -66,6 +70,7 @@ const toggleShowreel = () => state.setShowPlayer(!state.showPlayer)
   &-image {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
   }
 }
 </style>

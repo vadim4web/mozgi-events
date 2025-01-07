@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
+import Home from '@/views/HomeView.vue'
 import i18n from '@/i18n'
 
 const routes = [
@@ -13,56 +13,56 @@ const routes = [
         ua: 'MOZGI * Агенція подій повного циклу',
         ru: 'MOZGI * Агентство мероприятий полного цикла',
       },
-      transition: 'slide-up'
+      transition: 'slide-up',
     },
   },
   {
     path: '/where',
-    component: () => import('@/views/Where.vue'),
+    component: () => import('@/views/WhereView.vue'),
     meta: {
       titles: {
         en: 'Where * MOZGI',
         ua: 'Де * MOZGI',
         ru: 'Где * MOZGI',
       },
-      transition: 'slide-left'
+      transition: 'slide-left',
     },
   },
   {
     path: '/who',
-    component: () => import('@/views/Who.vue'),
+    component: () => import('@/views/WhoView.vue'),
     meta: {
       titles: {
         en: 'Who * MOZGI',
         ua: 'Хто * MOZGI',
         ru: 'Кто * MOZGI',
       },
-      transition: 'slide-down'
+      transition: 'slide-down',
     },
   },
   {
     path: '/what',
-    component: () => import('@/views/What.vue'),
+    component: () => import('@/views/WhatView.vue'),
     meta: {
       titles: {
         en: 'What * MOZGI',
         ua: 'Що * MOZGI',
         ru: 'Что * MOZGI',
       },
-      transition: 'slide-right'
+      transition: 'slide-right',
     },
   },
   {
     path: '/:pathMatch(.*)*',
     name: 'no-match',
-    component: () => import('@/views/404.vue'),
+    component: () => import('@/views/NotFound.vue'),
     meta: {
       titles: {
         en: 'MOZGI * 404',
         ua: 'MOZGI * 404',
         ru: 'MOZGI * 404',
       },
-      transition: 'fade'
+      transition: 'fade',
     },
   },
 ]

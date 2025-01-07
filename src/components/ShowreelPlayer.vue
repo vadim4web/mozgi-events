@@ -1,25 +1,24 @@
 <template>
-  <div class="video-container" v-if="state.showPlayer">
+  <div class="showreel-player-wrapper" v-if="state.showPlayer">
     <button @click="state.setShowPlayer(false)" class="close">X</button>
     <video
-      class="video-player"
+      class="showreel-player"
       controls
       autoplay
-      loop
+      running-span
       muted
-      :src="videoSrc"
+      :src="videoFile"
     ></video>
   </div>
 </template>
 
 <script setup>
 import { state } from '@/store'
-import videoFile from '@/assets/show.mp4'
-const videoSrc = videoFile
+import videoFile from '@/assets/showreel.mp4'
 </script>
 
 <style lang="scss" scoped>
-.video-container {
+.showreel-player-wrapper {
   position: absolute;
   z-index: 5;
   width: 100%;
@@ -39,12 +38,12 @@ const videoSrc = videoFile
   }
 }
 
-.video-player {
+.showreel-player {
   width: 100%;
   height: auto;
   border-radius: 10px;
   object-fit: contain;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px #00000033;
 }
 
 .close {
@@ -66,7 +65,7 @@ const videoSrc = videoFile
   &:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    background: rgba(0, 0, 0, 0.7);
+    background: #000000b3;
   }
 
   &:focus {
@@ -75,4 +74,3 @@ const videoSrc = videoFile
   }
 }
 </style>
-

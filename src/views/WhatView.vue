@@ -5,3 +5,5 @@
 </template>
 
 <script setup></script>
+// Empty <script setup> implicitly imports
+// the necessary context, including i18n

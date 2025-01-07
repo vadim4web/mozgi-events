@@ -1,5 +1,5 @@
 <template>
-  <lingo /> <logo />  <links />
+  <lingo-switcher /> <main-logo /> <router-links />
   <router-view v-slot="{ Component, route }">
     <transition :name="route.meta.transition || 'fade'">
       <component :is="Component" />
@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import Logo from '@/components/Logo.vue'
-import Lingo from '@/components/Lingo.vue'
-import Links from '@/components/Links.vue'
+import MainLogo from '@/components/MainLogo.vue'
+import LingoSwitcher from '@/components/LingoSwitcher.vue'
+import RouterLinks from '@/components/RouterLinks.vue'
 </script>

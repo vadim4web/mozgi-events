@@ -7,14 +7,14 @@
     --mozgi-top: 16px;
     --mozgi-w: 84px;
     --mozgi-h: 46px;
-    --links-offset: 19px;
+    --router-links-offset: 19px;
     --head1: 82px;
     --head1-w: 1023px;
-    --loop-h: 57px;
-    --loop-f: 52px;
-    --spot-size: 578px;
-    --spot-blur: 76px;
-    --show-size: 118px;
+    --running-span-h: 57px;
+    --running-span-f: 52px;
+    --sunshine-size: 578px;
+    --sunshine-blur: 76px;
+    --showreel-button-size: 118px;
     --link-f: 16px;
   }
 }
@@ -27,14 +27,14 @@
     --mozgi-top: 16px;
     --mozgi-w: 69px;
     --mozgi-h: 38px;
-    --links-offset: 10px;
+    --router-links-offset: 10px;
     --head1: 58px;
     --head1-w: 724px;
-    --loop-h: 46px;
-    --loop-f: 42px;
-    --spot-size: 482px;
-    --spot-blur: 76px;
-    --show-size: 112px;
+    --running-span-h: 46px;
+    --running-span-f: 42px;
+    --sunshine-size: 482px;
+    --sunshine-blur: 76px;
+    --showreel-button-size: 112px;
     --link-f: 14px;
   }
 }
@@ -47,14 +47,14 @@
     --mozgi-top: 16px;
     --mozgi-w: 69px;
     --mozgi-h: 38px;
-    --links-offset: 10px;
+    --router-links-offset: 10px;
     --head1: 58px;
     --head1-w: 568px;
-    --loop-h: 46px;
-    --loop-f: 42px;
-    --spot-size: 482px;
-    --spot-blur: 76px;
-    --show-size: 112px;
+    --running-span-h: 46px;
+    --running-span-f: 42px;
+    --sunshine-size: 482px;
+    --sunshine-blur: 76px;
+    --showreel-button-size: 112px;
     --link-f: 14px;
   }
 }
@@ -67,14 +67,14 @@
     --mozgi-top: 20px;
     --mozgi-w: 46px;
     --mozgi-h: 25px;
-    --links-offset: 10px;
+    --router-links-offset: 10px;
     --head1: 34px;
     --head1-w: 333px;
-    --loop-h: 31px;
-    --loop-f: 28px;
-    --spot-size: 294px;
-    --spot-blur: 47px;
-    --show-size: 90px;
+    --running-span-h: 31px;
+    --running-span-f: 28px;
+    --sunshine-size: 294px;
+    --sunshine-blur: 47px;
+    --showreel-button-size: 90px;
     --link-f: 16px;
   }
 }
