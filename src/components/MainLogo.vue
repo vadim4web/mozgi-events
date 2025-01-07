@@ -65,40 +65,40 @@
 }
 
 .main-logo {
+  z-index: 2;
   position: absolute;
   top: var(--mozgi-top);
+  left: calc((100vw - var(--mozgi-w)) / 2);
   width: var(--mozgi-w);
   height: var(--mozgi-h);
-  left: calc((100vw - var(--mozgi-w)) / 2);
-  z-index: 2;
 
   #logoShape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: var(--mozgi-w);
     height: var(--mozgi-h);
-    position: absolute;
-    left: 0;
-    bottom: 0;
     filter: url(#shadowShape);
   }
 
   #fillWrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     overflow: hidden;
+    width: var(--mozgi-w);
+    height: 0;
     -webkit-animation: fullfill 5s linear forwards;
     -moz-animation: fullfill 5s linear forwards;
     -o-animation: fullfill 5s linear forwards;
     animation: fullfill 5s linear forwards;
-    width: var(--mozgi-w);
-    height: 0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
 
     #logoFilled {
+      position: absolute;
+      bottom: 0;
+      left: 0;
       width: var(--mozgi-w);
       height: var(--mozgi-h);
-      position: absolute;
-      left: 0;
-      bottom: 0;
       path: url(#logoPath);
       fill: var(--black);
     }

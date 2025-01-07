@@ -17,11 +17,11 @@ import lingo from '@/assets/lingo.png'
 
 <style lang="scss" scoped>
 .lingo-switcher {
-  width: var(--lingo-size);
+  z-index: 10;
   position: absolute;
   top: var(--lingo-top);
   left: var(--lingo-left);
-  z-index: 10;
+  width: var(--lingo-size);
   cursor: pointer;
 
   .lingo-img {
@@ -37,27 +37,27 @@ import lingo from '@/assets/lingo.png'
   }
 
   .lingo-list {
-    top: 0;
-    left: var(--lingo-size);
-    height: var(--lingo-size);
     --size: calc(var(--lingo-size) / 2);
-    font-size: var(--size);
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    top: 0;
+    left: var(--lingo-size);
     width: calc(var(--size) * 5);
+    height: var(--lingo-size);
+    font-size: var(--size);
     pointer-events: none;
 
     .lingo-list-item {
       position: relative;
-      transition: transform 1s, opacity 1s;
-      -webkit-transition: transform 1s, opacity 1s;
-      pointer-events: auto;
-      cursor: pointer;
-      color: var(--gray);
-      font-weight: bold;
       padding: 0.25rem 0.5rem;
+      font-weight: bold;
+      -webkit-transition: transform 1s, opacity 1s;
+      transition: transform 1s, opacity 1s;
+      color: var(--gray);
+      cursor: pointer;
+      pointer-events: auto;
 
       &:hover {
         color: var(--yellow);
@@ -68,28 +68,28 @@ import lingo from '@/assets/lingo.png'
 
   &:not(:hover) .lingo-list-item {
     opacity: 0;
-    transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 
     &.en {
-      transform: translateX(calc(var(--size) * -1.5));
       -webkit-transform: translateX(calc(var(--size) * -1.5));
+      transform: translateX(calc(var(--size) * -1.5));
     }
     &.uk {
-      transform: translateX(calc(var(--size) * -3));
       -webkit-transform: translateX(calc(var(--size) * -3));
+      transform: translateX(calc(var(--size) * -3));
     }
     &.ru {
-      transform: translateX(calc(var(--size) * -4.5));
       -webkit-transform: translateX(calc(var(--size) * -4.5));
+      transform: translateX(calc(var(--size) * -4.5));
     }
   }
 
   &:hover {
     .lingo-list-item {
-      transform: translateX(0);
-      -webkit-transform: translateX(0);
       opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
     }
   }
 }

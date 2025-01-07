@@ -18,6 +18,7 @@
         <div class="line line2" />
       </div>
     </button>
+
     <li>
       <router-link @click="closeMenu" class="link home logo" to="/">
         <svg
@@ -56,16 +57,19 @@
         </svg>
       </router-link>
     </li>
+
     <li>
       <router-link @click="closeMenu" class="link where" to="/where"
         >{{ $t('where') }} ?</router-link
       >
     </li>
+
     <li>
       <router-link @click="closeMenu" class="link who" to="/who"
         >{{ $t('who') }} ?</router-link
       >
     </li>
+
     <li>
       <router-link @click="closeMenu" class="link what" to="/what"
         >{{ $t('what') }} ?</router-link
@@ -80,6 +84,7 @@ import { useMediaQuery } from '@vueuse/core'
 
 const isMobile = useMediaQuery('(max-width: 767px)')
 const menuOpen = ref(false)
+
 const toggleMenu = () => (menuOpen.value = !menuOpen.value)
 const closeMenu = () => (menuOpen.value = false)
 </script>
@@ -104,8 +109,8 @@ const closeMenu = () => (menuOpen.value = false)
 }
 
 .router-links {
-  position: absolute;
   z-index: 10;
+  position: absolute;
   top: 0;
   right: 0;
   padding: 16px;
@@ -141,8 +146,8 @@ const closeMenu = () => (menuOpen.value = false)
     .lines {
       .line {
         position: absolute;
-        left: 0;
         top: 13px;
+        left: 0;
         width: 22px;
         height: 1.5px;
         background: var(--black);
@@ -160,20 +165,20 @@ const closeMenu = () => (menuOpen.value = false)
 
       &.open {
         .line {
+          height: 1px;
           -webkit-transform-origin: 0;
           transform-origin: 0;
-          height: 1px;
         }
 
         .line1 {
+          top: 6px;
           -webkit-transform: rotate(45deg) scaleX(1.4);
           transform: rotate(45deg) scaleX(1.4);
-          top: 6px;
         }
         .line2 {
+          top: 28px;
           -webkit-transform: rotate(-45deg) scaleX(1.4);
           transform: rotate(-45deg) scaleX(1.4);
-          top: 28px;
         }
       }
     }
@@ -236,16 +241,16 @@ const closeMenu = () => (menuOpen.value = false)
     }
     .link.who {
       top: calc(100vh - 16px - var(--router-links-offset) * 2);
+      right: 50vw;
       -webkit-transform: rotate(180deg) translateX(-50%);
       transform: rotate(180deg) translateX(-50%);
-      right: 50vw;
     }
 
     .link.what {
+      top: 50vh;
       right: calc(var(--router-links-offset) * 2 - 32px);
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
-      top: 50vh;
     }
   }
 }

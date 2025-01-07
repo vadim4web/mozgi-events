@@ -16,8 +16,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import showreel from '@/assets/showreel.png'
 import { state } from '@/store'
+import showreel from '@/assets/showreel.png'
 
 const rotation = ref(0)
 let interval = null
@@ -37,35 +37,17 @@ const toggleShowreel = () => state.setShowPlayer(!state.showPlayer)
 </script>
 
 <style lang="scss">
-/* @keyframes rotation {
-  from { transform: translate(-50%, -50%) rotate(0); }
-  to { transform: translate(-50%, -50%) rotate(-360deg); }
-}
-
-@-webkit-keyframes rotation {
-  from { transform: translate(-50%, -50%) rotate(0); }
-  to { transform: translate(-50%, -50%) rotate(-360deg); }
-} */
-
 .show {
-  cursor: pointer;
-  width: var(--showreel-button-size);
-  height: var(--showreel-button-size);
-  position: absolute;
   z-index: 15;
-  border: none;
-  background: transparent;
+  position: absolute;
   top: 0;
   left: 0;
+  width: var(--showreel-button-size);
+  height: var(--showreel-button-size);
+  background: transparent;
+  border: none;
   border-radius: 50%;
-  /* transform: translate(-50%, -50%); */
-
-  /* &:hover {
-    -webkit-animation: rotation 3s infinite;
-    -moz-animation: rotation 3s infinite;
-    -o-animation: rotation 3s infinite;
-    animation: rotation 3s infinite;
-  } */
+  cursor: pointer;
 
   &-image {
     width: 100%;

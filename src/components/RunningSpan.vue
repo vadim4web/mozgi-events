@@ -31,27 +31,27 @@ onUnmounted(() => window.removeEventListener('resize', updateDiagonal))
 <style lang="scss">
 .running-span-wrapper {
   position: absolute;
-  min-width: calc(hypot(100vw, 100vh));
-  min-height: 1px;
   top: 50%;
   left: 0;
+  min-width: calc(hypot(100vw, 100vh));
+  min-height: 1px;
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
 }
 
 .running-span {
   opacity: 0.1;
-  color: transparent;
-  text-shadow: none;
-  -webkit-text-stroke: 2px var(--black); // Safari compatibility
-  text-align: center;
-  text-transform: uppercase;
-  border: 1px solid var(--gray);
-  font-weight: 700;
+  width: calc(hypot(100vmax, 100vmin) * 4);
+  height: var(--running-span-h);
   line-height: 110%;
   font-size: var(--running-span-f);
-  height: var(--running-span-h);
-  width: calc(hypot(100vmax, 100vmin) * 4);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: none;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--black); // Safari compatibility
+  border: 1px solid var(--gray);
 }
 
 @keyframes running-span1 {
@@ -100,8 +100,8 @@ onUnmounted(() => window.removeEventListener('resize', updateDiagonal))
 
 .running-span1 {
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
   -webkit-transform: translate(0, -8px) rotate(180deg);
   transform: translate(0, -8px) rotate(180deg);
   -webkit-animation: running-span1 13s -2s linear infinite;

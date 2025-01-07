@@ -21,6 +21,7 @@ import ShowreelButton from '@/components/ShowreelButton.vue'
 
 .sunshine::before {
   content: '';
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -28,11 +29,10 @@ import ShowreelButton from '@/components/ShowreelButton.vue'
   height: var(--sunshine-size);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border-radius: calc(var(--sunshine-size) / 2);
   -webkit-filter: blur(var(--sunshine-blur));
-  filter: blur(var(--sunshine-blur));
   background: radial-gradient(var(--yellow) 95%, transparent);
-  z-index: 0;
+  filter: blur(var(--sunshine-blur));
+  border-radius: calc(var(--sunshine-size) / 2);
 }
 
 .showreel-wrapper {

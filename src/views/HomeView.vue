@@ -1,9 +1,9 @@
 <template>
   <main class="main">
     <h1 style="display: none">MOZGI * Full-Cycle Event Agency</h1>
-    <main-header />
     <running-span />
     <sun-shine />
+    <main-header />
     <showreel-player />
   </main>
 </template>
