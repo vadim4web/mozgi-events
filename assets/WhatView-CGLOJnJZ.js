@@ -1,0 +1,1 @@
+import{_ as a,c as t,a as s,t as c,o as n}from"./index-DVHHNwBz.js";const o={},r={class:"main"};function _(e,i){return n(),t("main",r,[s("h2",null,c(e.$t("what"))+" ?",1)])}const f=a(o,[["render",_]]);export{f as default};
