@@ -56,54 +56,54 @@ onUnmounted(() => window.removeEventListener('resize', updateDiagonal))
 
 @keyframes running-span1 {
   from {
-    -webkit-transform: translateX(-75%) translateY(8px) rotate(180deg);
-    transform: translateX(-75%) translateY(8px) rotate(180deg);
+    -webkit-transform: translateX(-75%) translateY(-8px) rotate(180deg);
+    transform: translateX(-75%) translateY(-8px) rotate(180deg);
   }
   to {
-    -webkit-transform: translateX(0) translateY(8px) rotate(180deg);
-    transform: translateX(0) translateY(8px) rotate(180deg);
+    -webkit-transform: translateX(0) translateY(-8px) rotate(180deg);
+    transform: translateX(0) translateY(-8px) rotate(180deg);
   }
 }
 
 @-webkit-keyframes running-span1 {
   from {
-    -webkit-transform: translateX(-75%) translateY(8px) rotate(180deg);
-    transform: translateX(-75%) translateY(8px) rotate(180deg);
+    -webkit-transform: translateX(-75%) translateY(-8px) rotate(180deg);
+    transform: translateX(-75%) translateY(-8px) rotate(180deg);
   }
   to {
-    -webkit-transform: translateX(0) translateY(8px) rotate(180deg);
-    transform: translateX(0) translateY(8px) rotate(180deg);
+    -webkit-transform: translateX(0) translateY(-8px) rotate(180deg);
+    transform: translateX(0) translateY(-8px) rotate(180deg);
   }
 }
 
 @keyframes running-span2 {
   from {
-    -webkit-transform: translateX(75%) translateY(-8px) rotate(0);
-    transform: translateX(75%) translateY(-8px) rotate(0);
+    -webkit-transform: translateX(75%) translateY(8px) rotate(0);
+    transform: translateX(75%) translateY(8px) rotate(0);
   }
   to {
-    -webkit-transform: translateX(0) translateY(-8px) rotate(0);
-    transform: translateX(0) translateY(-8px) rotate(0);
+    -webkit-transform: translateX(0) translateY(8px) rotate(0);
+    transform: translateX(0) translateY(8px) rotate(0);
   }
 }
 
 @-webkit-keyframes running-span2 {
   from {
-    -webkit-transform: translateX(75%) translateY(-8px) rotate(0);
-    transform: translateX(75%) translateY(-8px) rotate(0);
+    -webkit-transform: translateX(75%) translateY(8px) rotate(0);
+    transform: translateX(75%) translateY(8px) rotate(0);
   }
   to {
-    -webkit-transform: translateX(0) translateY(-8px) rotate(0);
-    transform: translateX(0) translateY(-8px) rotate(0);
+    -webkit-transform: translateX(0) translateY(8px) rotate(0);
+    transform: translateX(0) translateY(8px) rotate(0);
   }
 }
 
 .running-span1 {
   position: absolute;
   left: 0;
-  top: 0;
-  -webkit-transform: rotate(180deg) translateY(8px);
-  transform: rotate(180deg) translateY(8px);
+  bottom: 0;
+  -webkit-transform: translate(0, -8px) rotate(180deg);
+  transform: translate(0, -8px) rotate(180deg);
   -webkit-animation: running-span1 13s -2s linear infinite;
   -moz-animation: running-span1 13s -2s linear infinite;
   -o-animation: running-span1 13s -2s linear infinite;
@@ -112,10 +112,10 @@ onUnmounted(() => window.removeEventListener('resize', updateDiagonal))
 
 .running-span2 {
   position: absolute;
+  top: 0;
   right: 0;
-  bottom: 0;
-  -webkit-transform: translate(-0%, -8px) rotate(0);
-  transform: translate(-0%, -8px) rotate(0);
+  -webkit-transform: translat(0, 8px) rotate(0);
+  transform: translate(0, 8px) rotate(0);
   -webkit-animation: running-span2 15s -2s linear infinite;
   -moz-animation: running-span2 15s -2s linear infinite;
   -o-animation: running-span2 15s -2s linear infinite;
