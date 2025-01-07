@@ -43,32 +43,34 @@ mozgi-events/
 │   ├── assets/ # Images, fonts, and other assets used in components
 │   │   ├── lingo.png # PNG image used in `Lingo` component
 │   │   ├── routes.css # Styles used in Vue-Router Transition
-│   │   ├── show.mp4 # MOZGI Event Agency's cover Video
+│   │   ├── showreel.mp4 # MOZGI Event Agency's cover Video
 │   │   ├── showreel.png # PNG showreel wheel-shaped span used in `ShowreelButton.vue`
 │   │   └── vars.css # CSS variables for different devices
 │   ├── components/ # Vue components
+│   │   ├── LingoSwitcher.vue # Language switching component
 │   │   ├── MainHeader.vue # Header component
 │   │   ├── MainLogo.vue # Logo component
-│   │   ├── Routerrouter-links.vue # router-links menu component
-│   │   ├── LingoSwitcher.vue # Language switching component
-│   │   ├── ShowreelPlayer.vue # Player component
+│   │   ├── RouterrLinks.vue # router-links menu component
+│   │   ├── RunningSpan.vue # router-links menu component
 │   │   ├── ShowreelButton.vue # Player show/Hide component
+│   │   ├── ShowreelPlayer.vue # Player component
 │   │   └── SunShine.vue # sunshine like the Sun behind component
-│   ├── i18n.js # Internationalization setup (Vue-i18n)
-│   ├── router.js # Vue Router for page navigation
-│   ├── store.js # Reactive global state management
-│   ├── style.css # Global styles (including animations, transitions, etc.)
 │   ├── views/ # Vue views for different routes/pages
-│   │   ├── NotFound.vue # 404 page view
 │   │   ├── HomeView.vue # Home page view
+│   │   ├── NotFound.vue # 404 page view
 │   │   ├── WhatView.vue # 'What' page view
 │   │   ├── WhereView.vue # 'Where' page view
 │   │   └── WhoView.vue # 'Who' page view
 │   ├── App.vue # Main Vue component that serves as the entry point
-│   └── main.js # Main entry JavaScript file for the Vue app
+│   ├── i18n.js # Internationalization setup (Vue-i18n)
+│   ├── main.js # Main entry JavaScript file for the Vue app
+│   ├── router.js # Vue Router for page navigation
+│   ├── store.js # Reactive global state management
+│   └── style.css # Global styles (including animations, transitions, etc.)
+├── .prettierrc # Prettier configuration file
+├── README.md # Project documentation
 ├── index.html # Main HTML file (entry point for Vue app)
 ├── package.json # Project metadata and dependencies
-├── README.md # Project documentation
 └── vite.config.js # Vite configuration file
 ```
 
